@@ -28,14 +28,14 @@ jobs:
         with:
           node-version: 16.17.0
       
-      - name: Instalação Mocha e dos pacotes para testes
+      - name: Instalacao Mocha e dos pacotes para testes
         run: |
           cd src;
           npm install -g mocha;
           npm install 
           
-          
-          
+      - name: Executa testes
+        run: mocha src/test/convert.js
           
           
           
