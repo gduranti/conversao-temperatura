@@ -50,7 +50,7 @@ jobs:
           file: src/Dockerfile
           push: true
           tags: |
-            gduranti/conversao-temperatura:v1
+            gduranti/conversao-temperatura:${{github.run_number}}
             gduranti/conversao-temperatura:latest
             
 
